@@ -1,5 +1,6 @@
 :root {
     --white: #FFFFFF;
+    --light-gray: #e9ecef;
     --gray: #E0E1DD;
     --dark-gray: #6c757d;
     --light-blue: #778DA9;
@@ -9,11 +10,12 @@
 }
 
 .personalInformationForm {
-    background-color: var(--gray);
+    background-color: var(--white);
     margin: 1em;
     padding: 1em;
     border-radius: 1em;
-    box-shadow: 0 0 10px var(--dark-blue);
+    /*box-shadow: 0 0 10px var(--dark-blue);*/
+    max-width: 28em;
 }
 
 .personalInformationForm h2 {
@@ -31,7 +33,7 @@
 
 .nameRow {
     display: flex;
-    justify-content: space-around;
+    gap: 1em;
 
 }
 
@@ -45,7 +47,8 @@
     font-size: 16px;
     border-radius: 1em;
     border: none;
-    background-color: var(--white);
+    background-color: var(--light-gray);
+    flex: 1;
 }
 
 .row input {
@@ -53,7 +56,7 @@
     font-size: 16px;
     border-radius: 1em;
     border: none;
-    background-color: var(--white);
+    background-color: var(--light-gray);
 }
 
 input::placeholder {

@@ -6,21 +6,26 @@ function personalInformationForm() {
     <div className='personalInformationForm'>
       <h2>Personal Information:</h2>
       <form action="GET">
-        <div className="nameRow">
-          <input 
-            type="text" 
-            id = 'firstName'
-            placeholder='First name'
-            minLength={2}
-            maxLength={20}
-          />
-          <input 
-            type="text" 
-            id = 'lastName'
-            placeholder='Last name'
-            minLength={2}
-            maxLength={20}
-          />
+        <div className="row">
+          <label htmlFor="firstName">
+            Name:
+          </label>
+          <div className="nameRow">
+            <input 
+              type="text" 
+              id = 'firstName'
+              placeholder='First name'
+              minLength={2}
+              maxLength={20}
+            />
+            <input 
+              type="text" 
+              id = 'lastName'
+              placeholder='Last name'
+              minLength={2}
+              maxLength={20}
+            />
+          </div>
         </div>
         <div className="row">
           <label htmlFor="email">
