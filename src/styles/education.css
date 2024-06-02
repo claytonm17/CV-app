@@ -1,4 +1,4 @@
-.personalInformationForm {
+.educationForm {
     background-color: var(--white);
     margin: 1em;
     padding: 1em;
@@ -7,46 +7,23 @@
     max-width: 28em;
 }
 
-.personalInformationForm h2 {
+.educationForm h2 {
     text-align: left;
     color: var(--darker-blue);
     margin-bottom: 0.5em;
     font-size: 28px;
 }
 
-.personalInformationForm form {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.nameRow {
+.datesRow {
     display: flex;
     gap: 1em;
 }
 
-.row {
-    display: flex;
-    flex-direction: column;
-}
-
-.nameRow input {
+.datesRow input {
     padding: 0.5em;
     font-size: 16px;
     border-radius: 1em;
     border: none;
     background-color: var(--light-gray);
     flex: 1;
-}
-
-.row input {
-    padding: 0.5em;
-    font-size: 16px;
-    border-radius: 1em;
-    border: none;
-    background-color: var(--light-gray);
-}
-
-input::placeholder {
-    color: var(--dark-gray);
 }

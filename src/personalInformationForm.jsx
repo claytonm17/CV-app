@@ -4,7 +4,7 @@ import '../src/styles/personalInformationForm.css'
 function personalInformationForm() {
   return (
     <div className='personalInformationForm'>
-      <h2>Personal Information:</h2>
+      <h2>Personal Information</h2>
       <form action="GET">
         <div className="row">
           <label htmlFor="firstName">
@@ -41,7 +41,7 @@ function personalInformationForm() {
         </div>
         <div className="row">
           <label htmlFor="email">
-            Phone Number:
+            Phone Number: <small>optional</small>
           </label>
           <input 
             type="text" 
