@@ -27,3 +27,9 @@
     background-color: var(--light-gray);
     flex: 1;
 }
+
+.educationForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
