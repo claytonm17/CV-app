@@ -1,12 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Personal from './personalInformationForm.jsx'
-import Education from './education.jsx'
+import App from './App.jsx'
 import '../src/styles/index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Personal />
-    <Education />
+    <App />
   </React.StrictMode>,
 )
