@@ -6,6 +6,12 @@ img {
 
 .cv {
     background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 0.5fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 1em;
 }
 
 .heading {

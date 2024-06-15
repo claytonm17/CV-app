@@ -8,7 +8,7 @@ import '../styles/cv.css'
 const personalInfo = {
     name: "John Doe",
     email: "John.Doe@email.com",
-    phone: "+1(614)-555-5555",
+    phone: "+1 (614)-555-5555",
     location: "Columbus, OH",
 }
 
@@ -18,6 +18,13 @@ const professionalExperience = {
     location: "Cleveland, OH",
     title: "Cleveland Clinic",
     info: "Clinical Microbiology Laboratory",
+}
+
+const professionalExperience2 = {
+    date: "01/2024 - Present",
+    location: "Columbus, OH",
+    title: "The Ohio State University",
+    info: "Wexner Medical Center",
 }
 
 function CV() {
@@ -36,6 +43,7 @@ function CV() {
             <CVSection 
                 title={professionalExperience.sectionTitle}
                 contents={professionalExperience}
+                contents2={professionalExperience2}
             />
         </div>
     )
@@ -63,7 +71,7 @@ function CVHeading({ name, email, phone, location }) { // Add props for name, em
     )
 }
 
-function CVSection({ title, contents }) { 
+function CVSection({ title, contents, contents2 }) { 
     return (
         <div className="section">
             <h2>{title}</h2>
@@ -73,6 +81,13 @@ function CVSection({ title, contents }) {
                 title={contents.title}
                 info={contents.info}
             />
+            {contents2 ? 
+            <InformationPiece 
+                date={contents2.date}
+                location={contents2.location}
+                title={contents2.title}
+                info={contents2.info}
+            /> : null}
         </div>
     )
 }
