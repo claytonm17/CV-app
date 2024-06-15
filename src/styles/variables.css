@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --white: #FFFFFF;
+    --light-gray: #e9ecef;
+    --gray: #E0E1DD;
+    --dark-gray: #6c757d;
+    --light-blue: #778DA9;
+    --medium-blue: #415A77;
+    --dark-blue: #1B263B;
+    --darker-blue: #0D1B2A;
+}

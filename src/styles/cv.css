@@ -1,0 +1,14 @@
+@import 'variables.css';
+
+img {
+    width: 2em;
+}
+
+.heading {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+h1.name {
+    font-weight: 700;
+}
