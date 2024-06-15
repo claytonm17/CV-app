@@ -1,3 +1,10 @@
 body {
     background-color: var(--gray);
 }
+
+#root {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100vh;
+    gap: 1em;
+}
