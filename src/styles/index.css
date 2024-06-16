@@ -5,6 +5,8 @@ body {
 #root {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    height: 100vh;
-    gap: 1em;
+    align-items: start;
+    justify-items: center;
+    /*height: 100vh;*/
+    gap: 0;
 }

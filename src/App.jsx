@@ -3,10 +3,17 @@ import CV from './components/CV'
 import Form from './components/PersonalDetails'
 
 function App() {
+
+    const [nameData, setNameData] = useState({ firstName: "John", lastName: "Doe"});
+
+    const handleNameChange = (newNameData) => {
+        setNameData(newNameData);
+    }
+
     return (
         <>
-            <CV />
-            <Form />
+            <CV data={nameData} />
+            <Form onFormDataChange={handleNameChange} />
         </>
     )
 }

@@ -1,0 +1,52 @@
+.personalInformationForm {
+    background-color: var(--white);
+    margin: 0.5em;
+    padding: 1em;
+    /*box-shadow: 0 0 10px var(--dark-blue);
+    max-width: 28em;*/
+}
+
+.personalInformationForm h2 {
+    text-align: left;
+    color: var(--darker-blue);
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.personalInformationForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.nameRow {
+    display: flex;
+    gap: 1em;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameRow input {
+    padding: 0.5em;
+    font-size: 16px;
+    border-radius: 1em;
+    border: none;
+    background-color: var(--light-gray);
+    flex: 2;
+}
+
+.row input {
+    padding: 0.5em;
+    font-size: 16px;
+    border-radius: 1em;
+    border: none;
+    background-color: var(--light-gray);
+}
+
+input::placeholder {
+    color: var(--dark-gray);
+}

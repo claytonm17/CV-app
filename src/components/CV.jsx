@@ -11,7 +11,7 @@ const personalInfo = {
     phone: "+1 (614)-555-5555",
     location: "Columbus, OH",
 }
-
+/*
 const professionalExperience = {
     sectionTitle: "Professional Experience",
     date: "07/2022 - 12/2023",
@@ -25,34 +25,35 @@ const professionalExperience2 = {
     location: "Columbus, OH",
     title: "The Ohio State University",
     info: "Wexner Medical Center",
-}
+}*/
 
-function CV() {
+function CV({ data }) {
     return (
         <div className="cv">
             <CVHeading 
-                name={personalInfo.name}
+                firstName={data.firstName}
+                lastName={data.lastName}
                 email={personalInfo.email}
                 phone={personalInfo.phone}
                 location={personalInfo.location}    
-            />
-            <CVSection 
-                title={education.sectionTitle}
-                contents={education}
-            />
-            <CVSection 
-                title={professionalExperience.sectionTitle}
-                contents={professionalExperience}
-                contents2={professionalExperience2}
-            />
+            />            
         </div>
-    )
+    ) 
+/*<CVSection  //Add this back in
+    title={education.sectionTitle}
+    contents={education}
+/>
+<CVSection 
+    title={professionalExperience.sectionTitle}
+    contents={professionalExperience}
+    contents2={professionalExperience2}
+/>*/
 }
 
-function CVHeading({ name, email, phone, location }) { // Add props for name, email, phone, location
+function CVHeading({ firstName, lastName, email, phone, location }) { // Add props for name, email, phone, location
     return (
         <div className="heading">
-            <h1 className="name">{name}</h1>
+            <h1 className="name">{`${firstName} ${lastName}`}</h1>
             <div className="personal-information">
                 <div className="email">
                     <img src={EmailLogo} alt="Email Logo" />

@@ -11,8 +11,8 @@ img {
     grid-template-rows: repeat(5, 0.5fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin: 1em;
-    max-width: 750px;
+    margin: 0.5em;
+    max-width: 900px;
 }
 
 .heading {
