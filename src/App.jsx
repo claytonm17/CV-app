@@ -5,9 +5,12 @@ import Form from './components/PersonalDetails'
 function App() {
 
     const [formData, setFormData] = useState({ 
-        firstName: "John", 
-        lastName: "Doe",
-        email: "John.Doe@email.com",
+        // Default Values
+        firstName: "Myles", 
+        lastName: "Morales",
+        email: "Myles.Morales@email.com",
+        phone: "+1 (718)-555-5555",
+        location: "Brooklyn, NY",
     });
 
     const handleFormChange = (newFormData) => {

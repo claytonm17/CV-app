@@ -48,15 +48,15 @@ function Form({ onFormDataChange }) {
 
     // label: string = text that shows in UI
     // name: string = prop name -- should be same
-    const oneTextInput = (label, name) => (
-        <div className="row">
-            <label htmlFor="email">
+    const oneTextInput = (label, name, placeholder) => (
+        <div className="single-row">
+            <label className="input-row" htmlFor="email">
             {label}
                 <input 
                     type="text"
                     id = 'email'
                     name = {name}
-                    placeholder='John.Doe@email.com'
+                    placeholder={placeholder}
                     minLength={5}
                     maxLength={100}
                     value={formState.name}
@@ -71,7 +71,9 @@ function Form({ onFormDataChange }) {
             <h2>Personal Information</h2>
             <form>
                 {twoTextInput("Name:", "firstName", "lastName")}
-                {oneTextInput("Email:", "email")}
+                {oneTextInput("Email:", "email", "Myles.Morales@email.com")}
+                {oneTextInput("Phone:", "phone", "+1 (718)-555-5555")}
+                {oneTextInput("Location:", "location", "Brooklyn, NY")}
             </form>
         </div>
     )

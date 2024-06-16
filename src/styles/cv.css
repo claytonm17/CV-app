@@ -23,6 +23,7 @@ img {
     align-items: center;
     gap: 1em;
     padding: 1.5em;
+    min-width: 30em;
 }
 
 .personal-information {

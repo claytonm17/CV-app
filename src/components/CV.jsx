@@ -34,8 +34,8 @@ function CV({ data }) {
                 firstName={data.firstName}
                 lastName={data.lastName}
                 email={data.email}
-                phone={personalInfo.phone}
-                location={personalInfo.location}    
+                phone={data.phone}
+                location={data.location}    
             />            
         </div>
     ) 
