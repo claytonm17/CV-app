@@ -4,16 +4,20 @@ import Form from './components/PersonalDetails'
 
 function App() {
 
-    const [nameData, setNameData] = useState({ firstName: "John", lastName: "Doe"});
+    const [formData, setFormData] = useState({ 
+        firstName: "John", 
+        lastName: "Doe",
+        email: "John.Doe@email.com",
+    });
 
-    const handleNameChange = (newNameData) => {
-        setNameData(newNameData);
+    const handleFormChange = (newFormData) => {
+        setFormData(newFormData);
     }
 
     return (
         <>
-            <CV data={nameData} />
-            <Form onFormDataChange={handleNameChange} />
+            <CV data={formData} />
+            <Form onFormDataChange={handleFormChange} />
         </>
     )
 }

@@ -33,7 +33,7 @@ function CV({ data }) {
             <CVHeading 
                 firstName={data.firstName}
                 lastName={data.lastName}
-                email={personalInfo.email}
+                email={data.email}
                 phone={personalInfo.phone}
                 location={personalInfo.location}    
             />            
