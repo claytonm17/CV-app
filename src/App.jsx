@@ -22,6 +22,7 @@ function App() {
         <>
             <CV data={formData} />
             <PersonalInfoForm onFormDataChange={handleFormChange} />
+            <EducationForm onFormDataChange={handleFormChange} />
         </>
     )
 }
