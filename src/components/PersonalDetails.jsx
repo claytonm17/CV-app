@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import '../styles/form.css'
 
 function Form({ onFormDataChange }) {
-    // Add tenery operator for default values eventually
 
     const [formState, setFormState] = useState({ firstName: "", lastName: "", email: "" });
 

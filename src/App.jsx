@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import CV from './components/CV'
-import Form from './components/PersonalDetails'
+import PersonalInfoForm from './components/PersonalDetails'
+import EducationForm from './components/EducationDetails'
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
     return (
         <>
             <CV data={formData} />
-            <Form onFormDataChange={handleFormChange} />
+            <PersonalInfoForm onFormDataChange={handleFormChange} />
         </>
     )
 }

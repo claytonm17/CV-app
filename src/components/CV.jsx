@@ -5,12 +5,6 @@ import PhoneLogo from '../assets/phone.svg'
 import LocationLogo from '../assets/location.svg'
 import '../styles/cv.css'
 
-const personalInfo = {
-    name: "John Doe",
-    email: "John.Doe@email.com",
-    phone: "+1 (614)-555-5555",
-    location: "Columbus, OH",
-}
 /*
 const professionalExperience = {
     sectionTitle: "Professional Experience",
@@ -37,12 +31,13 @@ function CV({ data }) {
                 phone={data.phone}
                 location={data.location}    
             />            
+            <CVSection
+                title={education.sectionTitle}
+                contents={education}
+            />
         </div>
     ) 
-/*<CVSection  //Add this back in
-    title={education.sectionTitle}
-    contents={education}
-/>
+/*
 <CVSection 
     title={professionalExperience.sectionTitle}
     contents={professionalExperience}
