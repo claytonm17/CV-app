@@ -21,7 +21,7 @@ const professionalExperience2 = {
     info: "Wexner Medical Center",
 }*/
 
-function CV({ data }) {
+function CV({ data, eduData }) {
     return (
         <div className="cv">
             <CVHeading 
@@ -32,8 +32,12 @@ function CV({ data }) {
                 location={data.location}    
             />            
             <CVSection
-                title={education.sectionTitle}
-                contents={education}
+                title={"Education"}
+                univ={eduData.univ}
+                start={eduData.start}
+                end={eduData.end}
+                location={eduData.location}
+                info={eduData.info}
             />
         </div>
     ) 
@@ -67,23 +71,16 @@ function CVHeading({ firstName, lastName, email, phone, location }) { // Add pro
     )
 }
 
-function CVSection({ title, contents, contents2 }) { 
+function CVSection({ title, univ, start, end, location, info }) { 
     return (
         <div className="section">
             <h2>{title}</h2>
             <InformationPiece 
-                date={contents.date}
-                location={contents.location}
-                title={contents.title}
-                info={contents.info}
+                date = {`${start} - ${end}`}
+                location={location}
+                title={univ}
+                info={info}
             />
-            {contents2 ? 
-            <InformationPiece 
-                date={contents2.date}
-                location={contents2.location}
-                title={contents2.title}
-                info={contents2.info}
-            /> : null}
         </div>
     )
 }

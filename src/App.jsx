@@ -18,11 +18,23 @@ function App() {
         setFormData(newFormData);
     }
 
+    const [eduFormData, setEduFormData] = useState({
+        univ: "The Ohio State University",
+        start: "08/2018",
+        end: "05/2022",
+        location: "Columbus, OH",
+        info: "Bachelors of Science",
+    });
+
+    const handleEduFormChange = (newEduFormData) => {
+        setEduFormData(newEduFormData)
+    }
+
     return (
         <>
-            <CV data={formData} />
+            <CV data={formData} eduData={eduFormData}/>
             <PersonalInfoForm onFormDataChange={handleFormChange} />
-            <EducationForm onFormDataChange={handleFormChange} />
+            <EducationForm onFormDataChange={handleEduFormChange} />
         </>
     )
 }

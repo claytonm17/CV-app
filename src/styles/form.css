@@ -14,7 +14,9 @@
     font-weight: 700;
 }
 
-.personalInformationForm form, .educationInformationForm h2 {
+.personalInformationForm form, 
+.educationInformationForm h2, 
+.educationInformationForm form {
     display: flex;
     flex-direction: column;
     gap: 1em;
