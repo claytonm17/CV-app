@@ -1,4 +1,4 @@
-.personalInformationForm, .educationInformationForm{
+.personalInformationForm, .educationInformationForm, .professionalInformationForm{
     background-color: var(--white);
     margin: 0.5em;
     padding: 1em;
@@ -6,7 +6,7 @@
     max-width: 28em;*/
 }
 
-.personalInformationForm h2, .educationInformationForm h2 {
+.personalInformationForm h2, .educationInformationForm h2, .professionalInformationForm h2{
     text-align: left;
     color: var(--darker-blue);
     margin-bottom: 0.5em;
@@ -16,7 +16,10 @@
 
 .personalInformationForm form, 
 .educationInformationForm h2, 
-.educationInformationForm form {
+.educationInformationForm form,
+.professionalInformationForm form,
+.professionalInformationForm h2 
+{
     display: flex;
     flex-direction: column;
     gap: 1em;

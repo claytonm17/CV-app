@@ -2,6 +2,7 @@ import { useState } from 'react'
 import CV from './components/CV'
 import PersonalInfoForm from './components/PersonalDetails'
 import EducationForm from './components/EducationDetails'
+import ProfessionalForm from './components/ProfessionalDetails'
 
 function App() {
 
@@ -30,11 +31,28 @@ function App() {
         setEduFormData(newEduFormData)
     }
 
+    const [proFormData, setProFormData] = useState({
+        name: "Nationwide Children's Hospital",
+        start: "06/2023",
+        end: "Present",
+        location: "Columbus, OH",
+        info: "Web Developer",
+    });
+
+    const handleProFormChange = (newProFormData) => {
+        setProFormData(newProFormData)
+    }
+
     return (
         <>
-            <CV data={formData} eduData={eduFormData}/>
+            <CV 
+                data={formData} 
+                eduData={eduFormData} 
+                proData={proFormData}
+            />
             <PersonalInfoForm onFormDataChange={handleFormChange} />
             <EducationForm onFormDataChange={handleEduFormChange} />
+            <ProfessionalForm onFormDataChange={handleProFormChange} />
         </>
     )
 }

@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import education from '../index' // Update eventually 
 import EmailLogo from '../assets/email.svg'
 import PhoneLogo from '../assets/phone.svg'
 import LocationLogo from '../assets/location.svg'
@@ -13,15 +12,9 @@ const professionalExperience = {
     title: "Cleveland Clinic",
     info: "Clinical Microbiology Laboratory",
 }
+*/
 
-const professionalExperience2 = {
-    date: "01/2024 - Present",
-    location: "Columbus, OH",
-    title: "The Ohio State University",
-    info: "Wexner Medical Center",
-}*/
-
-function CV({ data, eduData }) {
+function CV({ data, eduData, proData }) {
     return (
         <div className="cv">
             <CVHeading 
@@ -38,6 +31,14 @@ function CV({ data, eduData }) {
                 end={eduData.end}
                 location={eduData.location}
                 info={eduData.info}
+            />
+            <CVSection 
+                title={"Professional Experience"}
+                univ={proData.name}
+                start={proData.start}
+                end={proData.end}
+                location={proData.location}
+                info={proData.info}
             />
         </div>
     ) 
